@@ -55,7 +55,6 @@ public class SocketOverUDP {
         ObjectInputStream objectInputStream = new ObjectInputStream(new BufferedInputStream(byteArrayInputStream));
         segment = (TCPSegment) objectInputStream.readObject();
         objectInputStream.close();
-
         return segment;
     }
 }
